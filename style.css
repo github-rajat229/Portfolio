@@ -16,15 +16,11 @@
     box-sizing: border-box; 
   }
 
-  body {
-    font-family: 'Outfit', sans-serif;
-    background: var(--paper);
-    
-    background-image: radial-gradient(#d5dbf0 1.2px, transparent 1.2px);
-    background-size: 26px 26px;
-    color: var(--ink);
-  }
-
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--paper);         
+  color: var(--ink);
+}
   /* ---------- NAVBAR ---------- */
   header {
     display: flex;
@@ -50,7 +46,14 @@
   height: 11px;
   background: var(--marigold);
   border-radius: 50%;
+  animation: pulse 2.4s ease-in-out infinite;
 }
+@keyframes pulse{ 
+  50% { 
+    transform: scale(1.5); 
+    opacity: .6; } 
+  }
+
   nav { 
     display: flex; 
     align-items: 
@@ -82,11 +85,13 @@
   }
 
   /* ---------- HERO ---------- */
-  .hero {
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 110px 70px 60px 73px;
+  background-image: radial-gradient(#d5dbf0 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
 }
   .left {
     width: 55%;
@@ -184,7 +189,6 @@
     margin-right: 10px;
   }
 
-  /* yellow circle */
   .yellow {
     position: absolute;
     top: 0;
@@ -195,7 +199,6 @@
     border-radius: 50%;
   }
 
-  /* rotating dashed circle */
   .dashed {
     position: absolute;
     top: 50%;
@@ -211,7 +214,6 @@
     to { transform: rotate(360deg); }
   }
 
-  /* arch photo frame */
   .photo {
     position: absolute;
     top: 50%;
@@ -233,7 +235,6 @@
     display: block;
   }
 
-  /* floating tech tags */
   .tag {
     position: absolute;
     background: var(--white);
@@ -532,4 +533,139 @@
   font-family: var(--display);
   font-size: 17px;
   color: var(--white);
+}
+/* ---------- ASSIGNMENTS ---------- */
+.assignments {
+  padding: 110px 73px;
+}
+.assignments h2 {
+  font-family: var(--display);
+  font-size: 54px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.assignments .sub {
+  color: var(--muted);          
+  margin-bottom: 60px;
+}
+
+.assign-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* card + hover */
+.assign-card {
+  background: var(--white);
+  border: 1px solid #e0e4f3;
+  border-radius: 26px;
+  overflow: hidden;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.assign-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(30, 50, 120, 0.25);
+}
+
+.assign-head {
+  height: 128px;
+  position: relative; background-image:
+    radial-gradient(circle, rgba(255, 255, 255, .3) 0 5px, transparent 6px),
+    radial-gradient(circle, rgba(255, 255, 255, .15) 0 9px, transparent 10px);
+  background-size: 44px 44px;
+  background-position: 0 0, 22px 22px;
+  transition: background-position .6s var(--ease);
+}
+.blue   { 
+  background-color: var(--cobalt); 
+}
+.green  { 
+  background-color: var(--turquoise); 
+}
+.gold { 
+  background-color: var(--marigold); 
+}
+.dark   { 
+  background-color: var(--ink); 
+}
+.assign-card:hover .assign-head {
+  background-position: 14px 14px, 36px 36px;
+}
+/* white icon box  */
+.assign-icon {
+  position: absolute;
+  left: 24px;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(30, 50, 120, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.blue .assign-icon   { 
+  color: var(--cobalt); 
+}
+.green .assign-icon  { 
+  color: var(--turquoise); 
+}
+.yellow .assign-icon { 
+  color: var(--ink); 
+}
+.dark .assign-icon   { 
+  color: var(--ink); 
+}
+
+/* text */
+.assign-body {
+  padding: 54px 26px 30px;
+}
+.assign-body h3 {
+  font-family: var(--display);
+  font-size: 24px;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.assign-body p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.assign-body p b { 
+  color: var(--ink); 
+}
+.assign-body ul { 
+  list-style: none; 
+}
+
+.assign-body li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  padding: 6px 0;
+}
+
+.tick {
+  flex-shrink: 0;          
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  background: #e3e9fb;
+  color: var(--cobalt);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
