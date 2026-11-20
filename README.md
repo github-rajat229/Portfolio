@@ -8,6 +8,8 @@ No frameworks, no JavaScript. Just HTML and CSS.
 
 ## Preview
 
+Live : https://rajatsharma31.github.io/Portfolio/
+
 The page has six sections, from top to bottom:
 
 | Section | What it shows |
