@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            line-height: 8vh;
+        }
+        .con{
+            height: 100vh;
+        }
+        .top{
+            height: 40vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box1{
+            height: 12vh;
+            width: 12vh;
+            background-color: #4F46E5;
+            border-radius: 10%;
+            animation-name: color;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes color{
+            0%{
+                background-color: red;
+            }
+            33%{
+                background-color: blue;
+            }
+            66%{
+                background-color: green;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+        .box2{
+            height: 12vh;
+            width: 12vh;
+            background-color: #6366F1;
+            border-radius: 10%;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move{
+            0%{
+                transform: translate(0,0);
+            }
+            33%{
+                transform: translate(0, 5vh);
+            }
+            66%{
+                transform: translate(0, -5vh);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        .box3{
+            height: 12vh;
+            width: 12vh;
+            background-color: #38BDF8;
+            border-radius: 10%;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .box4{
+            height: 12vh;
+            width: 12vh;
+            background-color: #14B8A6;
+            border-radius: 10%;
+            animation-name: pulse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .box5{
+            height: 12vh;
+            width: 12vh;
+            background-color: #64748B;
+            border-radius: 10%;
+            animation-name: fade;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+        @keyframes fade{
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: .5;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .box6{
+            height: 12vh;
+            width: 12vh;
+            border: 1vh solid white;
+            border-top: 1vh solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation-name: unknown;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes unknown{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        h4{
+            text-align: center;
+            color: white;
+            line-height: 10vh;
+        }
+        .bottom{
+            height: 60vh;
+            width: 100%;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .sq{
+            height: 35vh;
+            width: 35vh;
+            border: 0.25vh dashed black;
+        }
+        .b{
+            height: 11.66vh;
+            width: 11.66vh;
+            background-color: #334155;
+            animation-name: moving;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moving{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(23vh,0);
+            }
+            50%{
+                transform: translate(23vh,23vh);
+            }
+            75%{
+                transform: translate(0,23.34vh);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        .a{
+            height: 35vh;
+            width: 35vh;
+            gap: 0.3vh;
+            border: 0.25vh dashed black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .google{
+            height: 5.8vh;
+            width: 5.8vh;
+            border-radius: 50%;
+            animation-name: ek;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes ek{
+            0%,100%{
+                transform: translate(0);
+            }
+            33%{
+                transform: translate(0,-3.5vh);
+            }
+        }
+        .g1{
+            background-color: orange;
+        }
+        .g2{
+            background-color: yellow;
+            animation-delay: .3s;
+        }
+        .g3{
+            background-color: green;
+            animation-delay: .6s;
+        }
+        .g4{
+            background-color: blue;
+            animation-delay: .9s;
+        }
+        .g5{
+            background-color: red;
+            animation-delay: 1.2s;
+        }
+        h2{
+            position: absolute;
+            right: 20vw;
+            top: 52vh;
+            width: max-content;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h3{
+            position: absolute;
+            top: 52vh;
+            left: 20vw;
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1>CSS Animation Examples </h1>
+        <div class="top">
+            <div class="box1"><h4>Color</h4></div>
+            <div class="box2"><h4>Move</h4></div>
+            <div class="box3"><h4>Rotate</h4></div>
+            <div class="box4"><h4>Pulse</h4></div>
+            <div class="box5"><h4>Fade</h4></div>
+            <div class="box6"><h4 style="color: black;">Load</h4></div>
+        </div>
+        <h3>Square Path Animation</h3>
+        <div class="bottom">
+            <div class="sq">
+                <div class="b"></div>
+            </div>
+            <div class="a">
+                <h2>Google Animation</h2>
+                <div class="google g1"></div>
+                <div class="google g2"></div>
+                <div class="google g3"></div>
+                <div class="google g4"></div>
+                <div class="google g5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

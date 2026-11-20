@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rajat Sharma | BCA Student</title>
 
-<!-- Font + Icons -->
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="style.css">
@@ -21,8 +20,8 @@
       <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#">Assignments</a>
-      <a href="#" class="contact">Contact</a>
+      <a href="#assignments">Assignments</a>
+      <a href="#contact" class="contact">Contact</a>
     </nav>
   </header>
 
@@ -39,8 +38,8 @@
       <p>I'm learning to build responsive websites with HTML5 and CSS3. Browse my assignments, check my skills, and get in touch.</p>
 
       <div class="buttons">
-        <a href="#" class="btn btn-dark"><i class="fa-solid fa-folder-open"></i> View assignments</a>
-        <a href="#" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact me</a>
+        <a href="assignment.html" class="btn btn-dark"><i class="fa-solid fa-folder-open"></i> View assignments</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact me</a>
       </div>
 
       <div class="social">
@@ -57,9 +56,10 @@
       <div class="dashed"></div>
 
       <div class="photo">
-        <img src="images/home.png" alt="Laptop with code">
-      </div>
-
+  <div class="photo-inner">
+    <img src="images/home.png" alt="Laptop with code">
+  </div>
+</div>
       <div class="tag html"><i class="fa-brands fa-html5"></i> HTML5</div>
       <div class="tag css"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
     </div>
@@ -75,7 +75,6 @@
     <div class="item">Responsive Design</div><span class="star">✦</span>
     <div class="item">Flexbox &amp; Grid</div><span class="star">✦</span>
 
-    <!-- same set again (needed for a smooth loop) -->
     <div class="item">HTML5</div><span class="star">✦</span>
     <div class="item">CSS3</div><span class="star">✦</span>
     <div class="item">JavaScript</div><span class="star">✦</span>
@@ -87,12 +86,14 @@
 <!-- ABOUT -->
 <section class="about" id="about">
 
-  <!-- left: sticky picture -->
+  <!-- left -->
   <div class="about-img">
+  <div class="about-img-inner">
     <img src="images/about.jpg" alt="Students learning together">
   </div>
+</div>
 
-  <!-- right: scrolling info -->
+  <!-- right -->
   <div class="about-info">
     <h2>Learning to build for the web</h2>
 
@@ -202,98 +203,193 @@
     </div>
 
   </div>
-</section><!-- ASSIGNMENTS -->
+</section>
+<!-- ASSIGNMENTS -->
 <section class="assignments" id="assignments">
   <h2>My assignments</h2>
   <p class="sub">Key assignments and projects from the HTML &amp; CSS curriculum.</p>
 
   <div class="assign-grid">
-
+    <a href="assignments/background-main/index.html">
     <div class="assign-card">
       <div class="assign-head blue"><div class="assign-icon"><i class="fa-solid fa-file-code"></i></div></div>
       <div class="assign-body">
-        <h3>HTML Basics</h3>
-        <p><b>Task:</b> Create a structured web page using semantic HTML5 tags.</p>
+        <h3>Background</h3>
+        <p><b>Task:</b> Create a full-screen hero banner with a background image.</p>
         <ul>
-          <li><span class="tick">✓</span>Used proper document structure</li>
-          <li><span class="tick">✓</span>Implemented all heading levels</li>
-          <li><span class="tick">✓</span>Created meaningful lists and content</li>
-          <li><span class="tick">✓</span>Added internal and external links</li>
+          <li><span class="tick">✓</span>Used a full-width mountain sunset background image</li>
+          <li><span class="tick">✓</span>Added a dark translucent overlay</li>
+          <li><span class="tick">✓</span>Placed clear, high-contrast heading text on top</li>
+          <li><span class="tick">✓</span>Controlled the image with background size and position</li>
         </ul>
       </div>
     </div>
-
+    </a>
+    <a href="assignments/newspaper-main/index.html">
     <div class="assign-card">
       <div class="assign-head green"><div class="assign-icon"><i class="fa-solid fa-palette"></i></div></div>
       <div class="assign-body">
-        <h3>CSS Styling</h3>
-        <p><b>Task:</b> Apply professional CSS styling to a web page.</p>
+        <h3>Newspaper Layout</h3>
+        <p><b>Task:</b> Build a multi-column newspaper layout with semantic HTML.</p>
         <ul>
-          <li><span class="tick">✓</span>Used external CSS stylesheet</li>
-          <li><span class="tick">✓</span>Applied colors and typography</li>
-          <li><span class="tick">✓</span>Created hover effects and transitions</li>
-          <li><span class="tick">✓</span>Implemented CSS box model properties</li>
+          <li><span class="tick">✓</span>Used semantic tags for the page structure</li>
+          <li><span class="tick">✓</span>Created multiple text columns</li>
+          <li><span class="tick">✓</span>Added vertical dividers between the columns</li>
+          <li><span class="tick">✓</span>Matched classic print typography</li>
         </ul>
       </div>
     </div>
-
+    </a>
+    <a href="assignments/Dynamic-Gallery-main/index.html">
     <div class="assign-card">
       <div class="assign-head gold"><div class="assign-icon"><i class="fa-solid fa-images"></i></div></div>
       <div class="assign-body">
-        <h3>Image Gallery</h3>
-        <p><b>Task:</b> Create a responsive image gallery with CSS effects.</p>
+        <h3>Dynamic Gallery</h3>
+        <p><b>Task:</b> Create a responsive masonry photo gallery.</p>
         <ul>
-          <li><span class="tick">✓</span>Built column-wise grid layout</li>
-          <li><span class="tick">✓</span>Added border-radius and shadow effects</li>
-          <li><span class="tick">✓</span>Implemented zoom on hover animation</li>
-          <li><span class="tick">✓</span>Made it fully responsive</li>
+          <li><span class="tick">✓</span>Built a multi-column photo grid</li>
+          <li><span class="tick">✓</span>Displayed landscape and sports photography</li>
+          <li><span class="tick">✓</span>Kept clean, even spacing between images</li>
+          <li><span class="tick">✓</span>Made the layout adjust to different screen sizes</li>
         </ul>
       </div>
     </div>
-
+    </a>
+    <a href="assignments/flex-box-main/index.html">
     <div class="assign-card">
       <div class="assign-head dark"><div class="assign-icon"><i class="fa-solid fa-mobile-screen-button"></i></div></div>
       <div class="assign-body">
-        <h3>Responsive Design</h3>
-        <p><b>Task:</b> Build a mobile-first responsive website.</p>
+        <h3>Flex Box</h3>
+        <p><b>Task:</b> Build a page wireframe using nested Flexbox.</p>
         <ul>
-          <li><span class="tick">✓</span>Used media queries for breakpoints</li>
-          <li><span class="tick">✓</span>Flexbox for flexible layouts</li>
-          <li><span class="tick">✓</span>Tested on multiple screen sizes</li>
-          <li><span class="tick">✓</span>Optimized for mobile and desktop</li>
+          <li><span class="tick">✓</span>Created a header, sidebar, content panels and footer</li>
+          <li><span class="tick">✓</span>Nested flex containers inside each other</li>
+          <li><span class="tick">✓</span>Used alignment and justify properties</li>
+          <li><span class="tick">✓</span>Color-blocked each area to show the structure</li>
         </ul>
       </div>
     </div>
-
+    </a>
+    <a href="assignments/UI-Card-main/index.html"> 
     <div class="assign-card">
       <div class="assign-head blue"><div class="assign-icon"><i class="fa-solid fa-keyboard"></i></div></div>
       <div class="assign-body">
-        <h3>HTML Forms</h3>
-        <p><b>Task:</b> Create and style an interactive form.</p>
+        <h3>UI/UX Card</h3>
+        <p><b>Task:</b>Design a modern developer profile card.</p>
         <ul>
-          <li><span class="tick">✓</span>Used all input types (text, email, tel)</li>
-          <li><span class="tick">✓</span>Applied form validation styling</li>
-          <li><span class="tick">✓</span>Created focus and hover effects</li>
-          <li><span class="tick">✓</span>Styled buttons with animations</li>
+          <li><span class="tick">✓</span>Made a split header design</li>
+          <li><span class="tick">✓</span>Added a circular avatar using border-radius</li>
+          <li><span class="tick">✓</span>Included social media icons</li>
+          <li><span class="tick">✓</span>Added action buttons</li>
         </ul>
       </div>
     </div>
-
+    </a>
+    <a href="assignments/navbar-main/index.html">
     <div class="assign-card">
       <div class="assign-head green"><div class="assign-icon"><i class="fa-solid fa-film"></i></div></div>
       <div class="assign-body">
-        <h3>Media &amp; Animation</h3>
-        <p><b>Task:</b> Embed media and create CSS animations.</p>
+        <h3>Navbar</h3>
+        <p><b>Task:</b> Design a centered glass-effect navigation bar.</p>
         <ul>
-          <li><span class="tick">✓</span>Embedded audio and video elements</li>
-          <li><span class="tick">✓</span>Created keyframe animations</li>
-          <li><span class="tick">✓</span>Used transition and transform effects</li>
-          <li><span class="tick">✓</span>Built loading spinner animation</li>
+          <li><span class="tick">✓</span>Built a centered, pill-shaped navbar</li>
+          <li><span class="tick">✓</span>Applied a glass (see-through) effect</li>
+          <li><span class="tick">✓</span>Used a dark-to-crimson diagonal gradient background</li>
+          <li><span class="tick">✓</span>Styled and spaced the navigation links</li>
         </ul>
       </div>
     </div>
+    </a>
+  </div>
+
+  <div class="more-wrap">
+    <a href="assignment.html" class="btn-more">
+      More <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+</section>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="contact-banner">
+    <img src="images/hawa.png" alt="Hawa Mahal, Jaipur">
+    <div class="banner-shade"></div>
+    <div class="banner-text">
+      <h2>Contact me</h2>
+      <p>Based in Ajmer, Rajasthan. Call, message, or send a note.</p>
+    </div>
+  </div>
+
+  <div class="contact-wrap">
+
+    <!-- left: -->
+    <div class="contact-info">
+      <h3>Contact information</h3>
+
+      <div class="info-row">
+  <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+  <div><span>Phone</span>
+    <b><a href="tel:+917742088055">+91 77420 88055</a></b>
+  </div>
+</div>
+
+<div class="info-row">
+  <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+  <div><span>Email</span>
+    <b><a href="mailto:rajatsharma55156@gmail.com">rajatsharma55156@gmail.com</a></b>
+  </div>
+</div>
+
+<div class="info-row">
+  <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+  <div><span>WhatsApp</span>
+    <b><a href="https://wa.me/917742088055?text=Hi%20Rajat%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">Message on WhatsApp</a></b>
+  </div>
+</div>
+
+<div class="info-row">
+  <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+  <div><span>Address</span>
+    <b><a href="https://www.google.com/maps/search/?api=1&query=Ajmer,Rajasthan,India" target="_blank" rel="noopener">Ajmer, Rajasthan, India</a></b>
+  </div>
+</div>
+
+<div class="info-row">
+  <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+  <div><span>College</span>
+    <b><a href="https://www.google.com/maps/search/?api=1&query=Dezyne+Ecole+College+Ajmer" target="_blank" rel="noopener">Dezyne École College, Ajmer</a></b>
+  </div>
+</div>
+    </div>
+
+    <!-- right -->
+    <form class="contact-form" action="mailto:rajatsharma5515@gmail.com" method="post" enctype="text/plain">
+      <h3>Send me a message</h3>
+
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="What is this about?">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+
+      <button type="submit" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+      <small>Sending opens your email app with this message ready to go.</small>
+    </form>
 
   </div>
 </section>
+<!-- footer -->
+<footer class="footer">
+  <p class="footer-main">© 2026 Rajat Sharma | Student Portfolio | Dezyne École College</p>
+  <p class="footer-sub">BCA First Year | HTML5 &amp; CSS3 Assignment Project</p>
+</footer>
 </body>
 </html>
