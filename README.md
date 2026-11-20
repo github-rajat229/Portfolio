@@ -1,6 +1,6 @@
 # Rajat Sharma | Student Portfolio Website
 
-A responsive, single-page portfolio website built with plain **HTML5** and **CSS3** as part of the BCA first-year curriculum at **Dezyne École Collège, Jaipur**.
+A responsive, single-page portfolio website built with plain **HTML5** and **CSS3** as part of the BCA first-year curriculum at **Dezyne École College, Ajmer**.
 
 No frameworks, no JavaScript. Just HTML and CSS.
 
