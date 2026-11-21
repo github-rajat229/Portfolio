@@ -180,6 +180,23 @@ body {
     text-decoration: none;
     font-size: 18px;
   }
+  .btn-dark:hover{
+    background: var(--cobalt);
+    transform: translate(0,-2px);
+    box-shadow: 0 5px 25px rgba(30, 50, 120, 0.3);
+    border: none;
+}
+.btn-outline:hover{
+    background: var(--marigold);
+    border: 1px solid var(--marigold);
+    transform: translate(0,-2px);
+    color: white;
+}
+.social a:hover{
+    background: var(--cobalt);
+    color: #fff;
+    transform: translateY(-5px) rotate(-8deg);
+}
 
   /* ---------- RIGHT SIDE ---------- */
   .right {
@@ -958,6 +975,7 @@ body {
     margin-top: 0;
   }
 }
+
 
 
 /* -------mobile---------- */
